@@ -39,7 +39,7 @@ def preprocessingImage(input_images):
 
 
 def split(array, nrows, ncols):
-    """Split a matrix into sub-matrices."""
+    #Split a matrix into sub-matrices.
     r, h = array.shape
     return (array.reshape(h // nrows, nrows, -1, ncols)
             .swapaxes(1, 2)
